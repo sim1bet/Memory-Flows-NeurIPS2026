@@ -1,0 +1,29 @@
+N: 48
+P: 6
+cycle: [0, 1, 2]
+epsilons: [0.0, 0.6]
+pattern_sets: 1
+activation: tanh
+reference_kappa: 15.0
+supercritical_factor: null
+evaluation_kappa_max: 60.0
+kappa_min: 3.0
+kappa_max: 24.0
+kappa_scan_points: 4
+kappa_bisection_steps: 1
+epsilon_max_success_probability: 0.50
+z_initial: 8.0
+tau_fast: 0.01
+tau_slow: 1.0
+dt_fast: 0.25
+max_slow_time_per_transition: 1.8
+check_interval: 0.025
+hold_time: 0.025
+min_alignment: 0.82
+min_margin: 0.04
+fast_noise_per_neuron: 1.0e-6
+asymptotic_cycles: 2
+terminal_cycles: 1
+plateau_relative_tolerance: 1.0
+seed: 20260803
+bootstrap_reps: 50

@@ -1,0 +1,84 @@
+dynamics:
+  tau_fast: 0.01
+  tau_slow: 1.0
+  dt_fast: 0.01
+  sample_dt_slow: 0.01
+cases:
+  - id: smoothf_orthogonal_subcritical
+    activation: smoothf
+    patterns: orthogonal
+    kappa: 9.0
+    N: 256
+    P: 15
+    cycle: [0, 1, 2, 3, 4]
+    initial_source: 4
+    initial_saliency: 8.0
+    initial_perturbation: 1.0e-8
+    fast_noise: 0.0
+    slow_time_horizon: 20.0
+    seed: 101
+  - id: smoothf_orthogonal_supercritical
+    activation: smoothf
+    patterns: orthogonal
+    kappa: 15.0
+    N: 256
+    P: 15
+    cycle: [0, 1, 2, 3, 4]
+    initial_source: 4
+    initial_saliency: 8.0
+    initial_perturbation: 1.0e-8
+    fast_noise: 0.0
+    slow_time_horizon: 20.0
+    seed: 102
+  - id: smoothf_random_subcritical
+    activation: smoothf
+    patterns: random
+    kappa: 9.0
+    N: 256
+    P: 15
+    cycle: [0, 1, 2, 3, 4]
+    initial_source: 4
+    initial_saliency: 8.0
+    initial_perturbation: 1.0e-8
+    fast_noise: 1.0e-6
+    slow_time_horizon: 20.0
+    seed: 103
+  - id: smoothf_random_supercritical
+    activation: smoothf
+    patterns: random
+    kappa: 15.0
+    N: 256
+    P: 15
+    cycle: [0, 1, 2, 3, 4]
+    initial_source: 4
+    initial_saliency: 8.0
+    initial_perturbation: 1.0e-8
+    fast_noise: 1.0e-6
+    slow_time_horizon: 20.0
+    seed: 104
+  - id: tanh_random_subcritical
+    activation: tanh
+    patterns: random
+    kappa: 3.0
+    N: 256
+    P: 15
+    cycle: [0, 1, 2, 3, 4]
+    initial_source: 4
+    initial_saliency: 8.0
+    initial_perturbation: 1.0e-8
+    fast_noise: 1.0e-6
+    slow_time_horizon: 20.0
+    seed: 105
+  - id: tanh_random_supercritical
+    activation: tanh
+    patterns: random
+    kappa: 5.0
+    N: 256
+    P: 15
+    cycle: [0, 1, 2, 3, 4]
+    initial_source: 4
+    initial_saliency: 8.0
+    initial_perturbation: 1.0e-8
+    fast_noise: 1.0e-6
+    slow_time_horizon: 20.0
+    seed: 106

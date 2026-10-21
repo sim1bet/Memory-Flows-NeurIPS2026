@@ -1,0 +1,23 @@
+activation: tanh
+N: 256
+P: 15
+cycle: [0, 1, 2, 3, 4]
+initial_source: 4
+initial_saliency: 8.0
+tau_fast: 0.01
+tau_slow: 1.0
+dt_fast: 0.01
+sample_dt_slow: 0.001
+slow_time_horizon: 40.0
+fast_noise_neuron_equivalent: 1.0e-8
+noise_period: 1024
+seed: 1
+kappa_max: 30.0
+kappa_points: 25
+minimum_offset: 0.03
+grid_power: 1.5
+theory_points: 320
+terminal_window_time: 8.0
+plateau_min_events: 3
+plateau_relative_tolerance: 0.02
+switch_hold_time: 0.01

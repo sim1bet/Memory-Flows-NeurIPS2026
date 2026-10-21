@@ -1,0 +1,5 @@
+activations: [smoothf, tanh]
+kappas: [15.0]
+z_min: 1.001
+z_max: 15.0
+z_points: 280

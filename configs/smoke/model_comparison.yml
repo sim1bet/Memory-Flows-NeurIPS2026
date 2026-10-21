@@ -1,0 +1,37 @@
+N: 64
+P: 8
+activation: tanh
+cycle:
+- 0
+- 1
+- 2
+- 3
+- 4
+initial_source: 4
+initial_saliency: 8.0
+initial_perturbation: 1.0e-08
+dt_physical: 0.02
+sample_dt: 0.1
+time_horizon: 8.0
+cases:
+- id: one_timescale_orthogonal
+  model: one_timescale
+  patterns: orthogonal
+  kappa: 5.0
+  seed: 201
+- id: two_timescale_orthogonal
+  model: two_timescale
+  patterns: orthogonal
+  kappa: 5.0
+  tau_fast: 1.0
+  tau_slow: 5.0
+  seed: 202
+  fast_noise: 0.0001
+  noise_convention: per_step
+- id: two_timescale_random
+  model: two_timescale
+  patterns: random
+  kappa: 5.0
+  tau_fast: 1.0
+  tau_slow: 5.0
+  seed: 203

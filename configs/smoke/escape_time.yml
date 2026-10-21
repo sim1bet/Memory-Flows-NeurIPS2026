@@ -1,0 +1,16 @@
+activation: tanh
+kappa: 15.0
+N: 64
+P: 8
+cycle: [0, 1, 2, 3, 4]
+initial_source: 4
+initial_saliency: 8.0
+initial_perturbation: 1.0e-8
+tau_fast: 0.01
+tau_slow: 1.0
+dt_fast: 0.05
+sample_dt_slow: 0.001
+slow_time_horizon: 6.5
+fast_noise: 1.0e-8
+switch_hold_time: 0.01
+seed: 1

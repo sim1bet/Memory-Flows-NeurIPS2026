@@ -1,0 +1,23 @@
+N: 256
+P: 15
+cycle: [0, 1, 2, 3, 4]
+correlation_model: biased
+correlations: [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7]
+pattern_sets: 50
+rules: [raw, gpi]
+activations: [tanh, smoothf]
+kappa: 15.0
+z_initial: 8.0
+tau_fast: 0.01
+tau_slow: 1.0
+dt_fast: 0.10
+max_time_per_transition: 4.0
+min_alignment: 0.90
+min_margin: 0.10
+hold_time: 0.02
+wrong_hold_time: 0.05
+collapse_hold_time: 0.05
+check_interval: 0.005
+fast_noise_per_neuron: 1.0e-6
+pinv_rcond: 1.0e-10
+seed: 20260727
