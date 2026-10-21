@@ -1,0 +1,19 @@
+\documentclass[tikz,border=3pt]{standalone}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}[
+  width=8.2cm,height=5.3cm,
+  xlabel={Transition event},ylabel={Dimensionless time $T$},
+  grid=major,legend style={draw=none,at={(0.02,0.98)},anchor=north west},
+]
+\addplot+[mark=o] table[x=event,y=T_esc_theory,col sep=comma]{../../figures/data/escape_time_validation.csv};
+\addlegendentry{Reduced theory}
+\addplot+[mark=square*,dashed] table[x=event,y=T_esc_empirical,col sep=comma]{../../figures/data/escape_time_validation.csv};
+\addlegendentry{Stability loss}
+\addplot+[mark=triangle*,dotted] table[x=event,y=T_switch_empirical,col sep=comma]{../../figures/data/escape_time_validation.csv};
+\addlegendentry{Visible switch}
+\end{axis}
+\end{tikzpicture}
+\end{document}

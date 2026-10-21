@@ -1,0 +1,20 @@
+\documentclass[tikz,border=3pt]{standalone}
+\usepackage{pgfplots}
+\usepgfplotslibrary{groupplots}
+\pgfplotsset{compat=1.18}
+\begin{document}
+\begin{tikzpicture}
+\begin{groupplot}[
+  group style={group size=2 by 1,horizontal sep=1.3cm},
+  width=6.4cm,height=5.0cm,xmode=log,
+  xlabel={Noise amplitude},grid=major,
+]
+\nextgroupplot[ylabel={$T_{\mathrm{switch}}-T_{\mathrm{esc}}$}]
+\addplot+[mark=o] table[x=noise_amplitude,y=median_gap,col sep=comma]{../../figures/data/noise_sweep.csv};
+\addplot[black,dashed,domain=1e-6:1]{0};
+\nextgroupplot[ylabel={Outcome probability},ymin=0,ymax=1]
+\addplot+[mark=o] table[x=noise_amplitude,y=post_escape_switch_probability,col sep=comma]{../../figures/data/noise_sweep.csv};
+\addplot+[mark=square*,dashed] table[x=noise_amplitude,y=premature_switch_probability,col sep=comma]{../../figures/data/noise_sweep.csv};
+\end{groupplot}
+\end{tikzpicture}
+\end{document}

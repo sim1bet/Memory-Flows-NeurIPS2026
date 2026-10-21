@@ -1,0 +1,16 @@
+\documentclass[tikz,border=3pt]{standalone}
+\usepackage{pgfplots}
+\usepgfplotslibrary{groupplots}
+\pgfplotsset{compat=1.18}
+\begin{document}
+\begin{tikzpicture}
+\begin{groupplot}[group style={group size=3 by 1,horizontal sep=0.8cm},width=4.8cm,height=4.2cm,xlabel={Time $t$},ylabel={Overlap},ymin=0,ymax=1,grid=major]
+\pgfplotsforeachungrouped \case in {one_timescale_orthogonal,two_timescale_orthogonal,two_timescale_random}{
+  \nextgroupplot
+  \pgfplotsforeachungrouped \m in {0,1,2,3,4}{
+    \addplot+[no marks] table[x=time,y=cosine_overlap,col sep=comma,restrict expr to domain={\thisrow{memory}}{\m:\m}]{../../figures/data/model_comparison_\case.csv};
+  }
+}
+\end{groupplot}
+\end{tikzpicture}
+\end{document}

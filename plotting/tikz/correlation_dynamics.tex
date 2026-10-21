@@ -1,0 +1,22 @@
+\documentclass[tikz,border=2pt]{standalone}
+\usepackage{pgfplots}
+\usepgfplotslibrary{groupplots}
+\pgfplotsset{compat=1.18}
+\begin{document}
+\begin{tikzpicture}
+\begin{groupplot}[group style={group size=2 by 2,horizontal sep=1.2cm,vertical sep=1.2cm},width=7.0cm,height=5.0cm,xlabel={$\epsilon$},grid=major,grid style={opacity=.15}]
+\nextgroupplot[ylabel={Sustained-cycle probability},ymin=0,ymax=1.05]
+\addplot+[mark=*] table[x=epsilon,y=plateau_fraction,col sep=comma] {../../figures/data/correlation_dynamics.csv};
+\addplot+[mark=none,dashed] table[x=epsilon,y=isotonic_sustained_success_fraction,col sep=comma] {../../figures/data/correlation_dynamics.csv};
+\nextgroupplot[ylabel={$\kappa$}]
+\addplot+[mark=*] table[x=epsilon,y=mean_kappa_crit,col sep=comma] {../../figures/data/correlation_dynamics.csv};
+\addplot+[mark=square*,dashed] table[x=epsilon,y=mean_evaluation_kappa,col sep=comma] {../../figures/data/correlation_dynamics.csv};
+\nextgroupplot[ylabel={$T_{\rm esc}$}]
+\addplot+[mark=*] table[x=epsilon,y=mean_asymptotic_T_esc,col sep=comma] {../../figures/data/correlation_dynamics.csv};
+\addplot+[mark=square*,dashed] table[x=epsilon,y=mean_orthogonal_T_esc_matched,col sep=comma] {../../figures/data/correlation_dynamics.csv};
+\nextgroupplot[ylabel={$\bar Z$}]
+\addplot+[mark=*] table[x=epsilon,y=mean_asymptotic_Z,col sep=comma] {../../figures/data/correlation_dynamics.csv};
+\addplot+[mark=square*,dashed] table[x=epsilon,y=mean_orthogonal_Z_matched,col sep=comma] {../../figures/data/correlation_dynamics.csv};
+\end{groupplot}
+\end{tikzpicture}
+\end{document}

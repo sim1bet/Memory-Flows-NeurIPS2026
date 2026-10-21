@@ -1,0 +1,12 @@
+\documentclass[tikz,border=3pt]{standalone}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}[width=8.2cm,height=5.2cm,xlabel={Slow time $t/\tau_z$},ylabel={$|z_\mu|$},grid=major]
+\pgfplotsforeachungrouped \m in {0,1,2,3,4}{
+  \addplot+[no marks] table[x=time_slow,y=saliency,col sep=comma]{../../figures/data/tanh_saliency_memory_\m.csv};
+}
+\end{axis}
+\end{tikzpicture}
+\end{document}

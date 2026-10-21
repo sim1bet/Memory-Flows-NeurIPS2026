@@ -1,0 +1,20 @@
+\documentclass[tikz,border=3pt]{standalone}
+\usepackage{pgfplots}
+\usepgfplotslibrary{groupplots}
+\pgfplotsset{compat=1.18}
+\begin{document}
+\begin{tikzpicture}
+\begin{groupplot}[
+  group style={group size=2 by 1,horizontal sep=1.3cm},
+  width=6.3cm,height=5.2cm,
+  xlabel={$Z$},ylabel={$Z^+$},grid=major,
+]
+\nextgroupplot[title={SmoothF}]
+\addplot+[no marks] table[x=Z,y=Z_plus,col sep=comma]{../../figures/data/return_map_smoothf_kappa_15.csv};
+\addplot[black,dashed,domain=1:15]{x};
+\nextgroupplot[title={Tanh}]
+\addplot+[no marks] table[x=Z,y=Z_plus,col sep=comma]{../../figures/data/return_map_tanh_kappa_15.csv};
+\addplot[black,dashed,domain=1:15]{x};
+\end{groupplot}
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,25 @@
+\documentclass[tikz,border=2pt]{standalone}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}[
+  width=9cm,height=6cm,
+  xlabel={slow gain $\kappa$},
+  ylabel={correlation $\epsilon$},
+  colormap/viridis,
+  point meta min=0,
+  colorbar,
+  colorbar style={title={$T_{\rm esc}$}},
+]
+% Gray cells: no correct transition, hence T_esc undefined.
+\addplot[only marks,mark=square*,mark size=5.8pt,gray!55,
+  restrict expr to domain={\thisrow{correct_transition_count}}{0:0}]
+ table[x=kappa,y=epsilon,col sep=comma]{../../figures/data/correlation_phase_plane.csv};
+% Colored cells: mean T_esc over realizations with correct transitions.
+\addplot[scatter,only marks,mark=square*,mark size=5.8pt,scatter src=explicit,
+  restrict expr to domain={\thisrow{correct_transition_count}}{0.5:10000}]
+ table[x=kappa,y=epsilon,meta=mean_T_esc,col sep=comma]{../../figures/data/correlation_phase_plane.csv};
+\end{axis}
+\end{tikzpicture}
+\end{document}

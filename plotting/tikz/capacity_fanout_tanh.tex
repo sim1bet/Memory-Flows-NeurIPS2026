@@ -1,0 +1,24 @@
+\documentclass[tikz,border=3pt]{standalone}
+\usepackage{pgfplots}
+\usepgfplotslibrary{groupplots}
+\pgfplotsset{compat=1.18}
+\begin{document}
+\begin{tikzpicture}
+\begin{groupplot}[
+  group style={group size=3 by 2,horizontal sep=0.8cm,vertical sep=0.9cm},
+  width=4.4cm,height=3.7cm,xlabel={$P/N$},ylabel={Success probability},
+  ymin=0,ymax=1,grid=major,
+]
+\pgfplotsforeachungrouped \d in {2,6,10,14,18}{
+  \nextgroupplot[title={$d=\d$}]
+  \pgfplotsforeachungrouped \N in {256,512,1024}{
+    \addplot+[mark=o] table[
+      x=alpha_actual,y=success_probability,col sep=comma,
+      restrict expr to domain={\thisrow{outdegree}}{\d:\d},
+      restrict expr to domain={\thisrow{N}}{\N:\N}
+    ]{../../figures/data/capacity_fanout_tanh.csv};
+  }
+}
+\end{groupplot}
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,29 @@
+\documentclass[tikz,border=3pt]{standalone}
+\usepackage{pgfplots}
+\usepgfplotslibrary{groupplots}
+\pgfplotsset{compat=1.18}
+\begin{document}
+\begin{tikzpicture}
+\begin{groupplot}[
+  group style={group size=2 by 1,horizontal sep=1.3cm},
+  width=6.3cm,height=5.0cm,
+  xlabel={$P/N$},ylabel={$\Pr$(complete $L\simeq P/3$ cycle)},
+  ymin=0,ymax=1,grid=major,
+]
+\nextgroupplot[title={Tanh}]
+\pgfplotsforeachungrouped \N in {256,512,1024}{
+  \addplot+[mark=o] table[
+    x=alpha_actual,y=success_probability,col sep=comma,
+    restrict expr to domain={\thisrow{N}}{\N:\N}
+  ]{../../figures/data/capacity_scaled_cycle_tanh.csv};
+}
+\nextgroupplot[title={SmoothF}]
+\pgfplotsforeachungrouped \N in {256,512,1024}{
+  \addplot+[mark=o] table[
+    x=alpha_actual,y=success_probability,col sep=comma,
+    restrict expr to domain={\thisrow{N}}{\N:\N}
+  ]{../../figures/data/capacity_scaled_cycle_smoothf.csv};
+}
+\end{groupplot}
+\end{tikzpicture}
+\end{document}

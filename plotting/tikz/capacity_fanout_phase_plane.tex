@@ -1,0 +1,29 @@
+\documentclass[tikz,border=2pt]{standalone}
+\usepackage{pgfplots}
+\usepgfplotslibrary{groupplots}
+\pgfplotsset{compat=1.18}
+\begin{document}
+\begin{tikzpicture}
+\begin{groupplot}[
+  group style={group size=3 by 1,horizontal sep=1.25cm},
+  width=5.1cm,height=4.6cm,
+  xlabel={$P/N$},
+  ymin=1.5,ymax=18.5,
+  ytick={2,4,6,8,10,12,14,16,18},
+  colormap/viridis,
+  point meta min=0,point meta max=1,
+  colorbar horizontal,
+  colorbar style={at={(0.5,-0.30)},anchor=north,width=10cm,title={transition probability}},
+]
+\nextgroupplot[ylabel={out-degree},title={$N=256$}]
+\addplot[scatter,only marks,mark=square*,mark size=5.7pt,scatter src=explicit,restrict expr to domain={\thisrow{N}}{256:256}]
+ table[x=alpha_actual,y=outdegree,meta=success_probability,col sep=comma]{../../figures/data/capacity_fanout_phase_plane_tanh.csv};
+\nextgroupplot[title={$N=512$}]
+\addplot[scatter,only marks,mark=square*,mark size=5.7pt,scatter src=explicit,restrict expr to domain={\thisrow{N}}{512:512}]
+ table[x=alpha_actual,y=outdegree,meta=success_probability,col sep=comma]{../../figures/data/capacity_fanout_phase_plane_tanh.csv};
+\nextgroupplot[title={$N=1024$}]
+\addplot[scatter,only marks,mark=square*,mark size=5.7pt,scatter src=explicit,restrict expr to domain={\thisrow{N}}{1024:1024}]
+ table[x=alpha_actual,y=outdegree,meta=success_probability,col sep=comma]{../../figures/data/capacity_fanout_phase_plane_tanh.csv};
+\end{groupplot}
+\end{tikzpicture}
+\end{document}

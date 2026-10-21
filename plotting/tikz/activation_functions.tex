@@ -1,0 +1,13 @@
+\documentclass[tikz,border=3pt]{standalone}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}[width=6.4cm,height=5.0cm,xlabel={$x$},ylabel={$\psi(x)$},grid=major,legend style={draw=none}]
+\addplot+[no marks] table[x=x,y=tanh,col sep=comma]{../../figures/data/activation_functions.csv};
+\addlegendentry{Tanh}
+\addplot+[no marks,dashed] table[x=x,y=smoothf,col sep=comma]{../../figures/data/activation_functions.csv};
+\addlegendentry{SmoothF}
+\end{axis}
+\end{tikzpicture}
+\end{document}

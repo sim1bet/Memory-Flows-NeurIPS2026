@@ -1,0 +1,18 @@
+\documentclass[tikz,border=3pt]{standalone}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}[
+  width=8.2cm,height=5.3cm,
+  xlabel={Slow feedback gain $\kappa$},ylabel={$T_{\mathrm{esc}}^\infty$},
+  grid=major,legend style={draw=none,at={(0.02,0.98)},anchor=north west},
+]
+\addplot+[no marks,thick] table[x=kappa,y=T_esc_theory_infty,col sep=comma]{../../figures/data/kappa_sweep_theory.csv};
+\addlegendentry{Stable fixed-point theory}
+\addplot+[only marks,mark=o,error bars/.cd,y dir=both,y explicit]
+ table[x=kappa,y=T_esc_empirical_infty,y error=T_esc_empirical_window_std,col sep=comma]{../../figures/data/kappa_sweep_empirical.csv};
+\addlegendentry{Finite-$\epsilon$ simulation}
+\end{axis}
+\end{tikzpicture}
+\end{document}
