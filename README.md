@@ -45,7 +45,7 @@ The model couples a fast neural state $x\in\mathbb{R}^N$ to a slow saliency stat
 
 $$
 \tau_x \dot{x}
-=-x+M\operatorname{diag}\!\bigl(\Phi(z)\bigr)M^\top\Psi(x),
+=-x+M\text{diag}\!\bigl(\Phi(z)\bigr)M^\top\Psi(x),
 \qquad
 \tau_z \dot{z}
 =-z+\frac{\kappa}{\sqrt N}AM^\top\Psi(x),
