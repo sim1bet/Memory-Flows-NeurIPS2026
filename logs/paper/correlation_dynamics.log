@@ -1,0 +1,24 @@
+[correlation_dynamics_critical] 504 jobs; 32 workers; 0 cached
+[correlation_dynamics_critical] 34/504; elapsed 30.4s; throughput ETA 0.12h (variable trial costs)
+[correlation_dynamics_critical] 95/504; elapsed 60.5s; throughput ETA 0.07h (variable trial costs)
+[correlation_dynamics_critical] 150/504; elapsed 90.7s; throughput ETA 0.06h (variable trial costs)
+[correlation_dynamics_critical] 215/504; elapsed 121.7s; throughput ETA 0.05h (variable trial costs)
+[correlation_dynamics_critical] 335/504; elapsed 152.0s; throughput ETA 0.02h (variable trial costs)
+[correlation_dynamics_critical] 483/504; elapsed 182.4s; throughput ETA 0.00h (variable trial costs)
+[correlation_dynamics_critical] 504/504; elapsed 186.3s; throughput ETA 0.00h (variable trial costs)
+[correlation_dynamics_evaluation] 504 jobs; 32 workers; 0 cached
+[correlation_dynamics_evaluation] 504/504; elapsed 20.3s; throughput ETA 0.00h (variable trial costs)
+{
+  "orthogonal_kappa_crit": 5.891385145280528,
+  "orthogonal_T_esc_critical": 0.6279989293589225,
+  "orthogonal_Z_critical": 2.4941665429683653,
+  "baseline_reference_kappa": 15.0,
+  "baseline_mean_empirical_kappa_crit": 3.8180197010869565,
+  "supercritical_factor": 3.9287382398078337,
+  "gain_rule": "kappa_eval = supercritical_factor * kappa_crit for each realization",
+  "evaluation_kappa_max": 150.0,
+  "epsilon_max_grid": 0.5,
+  "epsilon_max_interpolated": 0.5071428571428571,
+  "epsilon_max_success_probability": 0.5,
+  "epsilon_max_definition": "plateau-qualified sustained cycles at matched relative supercriticality"
+}

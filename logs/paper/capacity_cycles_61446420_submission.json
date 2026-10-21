@@ -1,0 +1,28 @@
+{
+  "job_id": 61446420,
+  "previous_job_id": 61361758,
+  "configuration": "configs/paper/capacity_cycles.yml",
+  "batch_script": "scripts/run_capacity_cycles.slurm",
+  "experiments": [
+    "scaled_cycle",
+    "fixed_cycle"
+  ],
+  "scaled_load_range": [
+    0.5,
+    1.5
+  ],
+  "fixed_load_range": [
+    125,
+    225
+  ],
+  "sample_points_per_sweep": 20,
+  "endpoints_included": true,
+  "pattern_sets": 10,
+  "workers": 32,
+  "tasks": 800,
+  "previous_data_archive": "data/raw/paper/capacity_cycles_61361758",
+  "raw_output": "data/raw/paper/capacity_cycles",
+  "camera_ready_output": "figures/camera_ready/capacity_scaled_fixed_cycle",
+  "stdout": "logs/paper/capacity_cycles_61446420.log",
+  "stderr": "logs/paper/capacity_cycles_61446420.err"
+}

@@ -1,0 +1,2 @@
+[limit_cycles] 6 jobs; 6 workers; 0 cached
+[limit_cycles] 6/6; elapsed 10.0s; throughput ETA 0.00h (variable trial costs)
