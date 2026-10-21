@@ -1,0 +1,14 @@
+{
+  "source_root": "data/raw/paper/correlation_dynamics",
+  "input_sha256": {
+    "data/raw/paper/correlation_dynamics/correlation_dynamics_summary.csv": "eff91fbd0b2d330fbe30a9009f58aa251c99f1da602a2bd4771bcf065b5509ca",
+    "data/raw/paper/correlation_dynamics/correlation_dynamics_theory.json": "dd035cc70122b9d0c18e9e151630f33635eb59b35fc1eae7dc77f91357f576ce"
+  },
+  "transparent_background": true,
+  "raster_dpi": 600,
+  "outputs": [
+    "correlation_dynamics.pdf",
+    "correlation_dynamics.svg",
+    "correlation_dynamics.png"
+  ]
+}

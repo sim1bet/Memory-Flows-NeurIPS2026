@@ -1,0 +1,40 @@
+{
+  "source_root": "/leonardo/home/userexternal/sbetteti/memory_flows_unified/data/raw/paper",
+  "panels": {
+    "A": "escape_time_validation: panel a",
+    "B": "kappa_sweep",
+    "C": "correlation_phase_plane: escape timing",
+    "D": "noise_sweep: panel a (ejection delay)",
+    "E": "noise_sweep: panel b (switching outcomes)",
+    "F": "correlation_phase_plane: retrieval reliability"
+  },
+  "layout": [
+    [
+      "A",
+      "B",
+      "C"
+    ],
+    [
+      "D",
+      "E",
+      "F"
+    ]
+  ],
+  "panel_label_style": "Computer Modern sans-serif, $\\mathsf{A}$ through $\\mathsf{F}$",
+  "input_sha256": {
+    "escape_time/escape_time_events.csv": "73a52aae5f6516a3c6f9ee9c58a127b484c4087609bbc71e7d69240c0ffe1e62",
+    "kappa_sweep/kappa_sweep_summary.csv": "418de2dc79da7c6373d4c112a80cfb51cbe0527d44c132fba170cd884a8fb3cd",
+    "kappa_sweep/kappa_sweep_theory.csv": "325cb8851816c34194a8dc38a7a57d42cb7efd0a00d67286b3180cf0b9fcd9a2",
+    "kappa_sweep/kappa_critical_point.csv": "e106c96bb3aeddfda468022667402166dfe0d9004034e55d09251a1055f01c7e",
+    "noise_sweep/noise_sweep_summary.csv": "ae13b8c970a711d600ab6d65f272d61213e2a56691a32a8c4afde01d50a95422",
+    "correlation_phase_plane/correlation_phase_plane_summary.csv": "86e5c5ff939c78f28050376b91d1e02ccf326f19367c834063f266d4ba097a2b"
+  },
+  "outputs": [
+    "correlation_noise_test.pdf",
+    "correlation_noise_test.svg",
+    "correlation_noise_test.png"
+  ],
+  "raster_dpi": 600,
+  "transparent_background": true,
+  "missing_transition_legend": false
+}

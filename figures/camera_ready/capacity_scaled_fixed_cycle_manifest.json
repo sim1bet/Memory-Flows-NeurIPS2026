@@ -1,0 +1,27 @@
+{
+  "source": "/leonardo/home/userexternal/sbetteti/memory_flows_unified/data/raw/paper/capacity_cycles/capacity_probability.csv",
+  "input_sha256": "f3f7e6ad272a53bebb246cd9b59b5d80ffdfea2c6615a2784d9fed5d66eb5734",
+  "layout": [
+    [
+      "A: SmoothF scaled cycle",
+      "B: Tanh scaled cycle"
+    ],
+    [
+      "C: SmoothF fixed cycle",
+      "D: Tanh fixed cycle"
+    ]
+  ],
+  "panel_rows": {
+    "A": 60,
+    "B": 60,
+    "C": 20,
+    "D": 20
+  },
+  "transparent_background": true,
+  "raster_dpi": 600,
+  "outputs": [
+    "capacity_scaled_fixed_cycle.pdf",
+    "capacity_scaled_fixed_cycle.svg",
+    "capacity_scaled_fixed_cycle.png"
+  ]
+}

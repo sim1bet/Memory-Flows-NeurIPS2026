@@ -1,0 +1,71 @@
+{
+  "kappa": 15.0,
+  "layout": [
+    [
+      "A: SmoothF return map",
+      "B: Tanh return map"
+    ],
+    [
+      "C: SmoothF reduced flow",
+      "D: Tanh reduced flow"
+    ]
+  ],
+  "input_sha256": {
+    "/leonardo/home/userexternal/sbetteti/memory_flows_unified/data/raw/paper/return_map/return_map.csv": "de81d3d4df5be3b1d006e437444df441ec5a07e276ee321a0a6b4cebc18aa063",
+    "/leonardo/home/userexternal/sbetteti/memory_flows_unified/data/raw/paper/return_map/return_map_fixed_points.csv": "39fc25a40e66edd751f7be569c06e8313270ad1811ec598c18ecd597bfd6e079",
+    "/leonardo/home/userexternal/sbetteti/memory_flows_unified/figures/data/reduced_phase_plane/reduced_phase_field.csv": "a27b5bb13fc2fe17ad8615fdebe70a340f61cff7f053d12c81590cb045fba464",
+    "/leonardo/home/userexternal/sbetteti/memory_flows_unified/figures/data/reduced_phase_plane/reduced_phase_boundary.csv": "3c6e1a6c46eeee52e05fdad7d1d26e57b14560183193b52c7dc04d7679ede200",
+    "/leonardo/home/userexternal/sbetteti/memory_flows_unified/figures/data/reduced_phase_plane/reduced_phase_paths.csv": "d738d211d110922ac8ef08508ccf60584ee11bf8249014422353334a63785e5b"
+  },
+  "axes_positions": {
+    "A": [
+      0.06810363075331663,
+      0.58960740665182,
+      0.3130455321216504,
+      0.3052193938186092
+    ],
+    "B": [
+      0.5173377357758311,
+      0.5896074066518199,
+      0.31304553212165054,
+      0.3052193938186093
+    ],
+    "C": [
+      0.06810363075331663,
+      0.14171875,
+      0.3130455321216504,
+      0.32702101267780465
+    ],
+    "D": [
+      0.5173377357758311,
+      0.14171875,
+      0.3130455321216504,
+      0.32702101267780465
+    ]
+  },
+  "panel_label_positions": {
+    "A": [
+      0.02427725625628558,
+      0.9177182550068248
+    ],
+    "C": [
+      0.02427725625628558,
+      0.49326633862864
+    ],
+    "B": [
+      0.47351136127880006,
+      0.9177182550068248
+    ],
+    "D": [
+      0.47351136127880006,
+      0.49326633862864
+    ]
+  },
+  "transparent_background": true,
+  "raster_dpi": 600,
+  "outputs": [
+    "return_map_reduced_phase_plane_kappa_15.pdf",
+    "return_map_reduced_phase_plane_kappa_15.svg",
+    "return_map_reduced_phase_plane_kappa_15.png"
+  ]
+}

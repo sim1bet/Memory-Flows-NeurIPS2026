@@ -1,0 +1,42 @@
+{
+  "activation": "tanh",
+  "panels": {
+    "A": "fanout_phase: N=256",
+    "B": "fanout_phase: N=512",
+    "C": "fanout_phase: N=1024",
+    "D": "fanout: outdegree=2",
+    "E": "fanout: outdegree=6",
+    "F": "fanout: outdegree=10",
+    "G": "fanout: outdegree=14",
+    "H": "fanout: outdegree=18"
+  },
+  "layout": [
+    [
+      "A",
+      "B",
+      "C"
+    ],
+    [
+      "D",
+      "E",
+      "F"
+    ],
+    [
+      "G",
+      "H",
+      "legend"
+    ]
+  ],
+  "phase_rows": 2076,
+  "curve_rows": 148,
+  "transparent_background": true,
+  "panel_label_style": "Black Computer Modern sans-serif, $\\mathsf{A}$ through $\\mathsf{H}$",
+  "raster_dpi": 600,
+  "outputs": [
+    "Fanout_tanh.pdf",
+    "Fanout_tanh.svg",
+    "Fanout_tanh.png"
+  ],
+  "source": "/leonardo/home/userexternal/sbetteti/memory_flows_unified/data/raw/paper/capacity/capacity_probability.csv",
+  "input_sha256": "9fd0f9727f9dc75b8d0304eddeec0cdf4bbb66cb194c8d153ecf699526592ec9"
+}
