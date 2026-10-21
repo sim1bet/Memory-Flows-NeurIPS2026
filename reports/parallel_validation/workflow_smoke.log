@@ -1,0 +1,24 @@
+Using 4 CPU slots; one numerical-library thread per worker.
+[run] escape_time (1 CPU slots)
+[run] return_map (1 CPU slots)
+[run] noise_sweep (1 CPU slots)
+[done] noise_sweep: 0.02 min
+[done] escape_time: 0.03 min
+[done] return_map: 0.08 min
+[run] model_comparison (4 CPU slots)
+[done] model_comparison: 0.05 min
+[run] limit_cycles (4 CPU slots)
+[done] limit_cycles: 0.05 min
+[run] kappa_sweep (4 CPU slots)
+[done] kappa_sweep: 0.05 min
+[run] capacity (4 CPU slots)
+[done] capacity: 0.09 min
+[run] correlation (4 CPU slots)
+[done] correlation: 0.33 min
+[run] correlation_dynamics (4 CPU slots)
+[done] correlation_dynamics: 0.08 min
+[run] correlation_phase_plane (4 CPU slots)
+[done] correlation_phase_plane: 0.31 min
+[run] output_contracts (1 CPU slots)
+[done] output_contracts: 0.01 min
+Completed smoke workflow. Timing report: /workspace/scratch/ee32108ff9b6/parallel_revision/memory_flows_unified/logs/smoke/workflow_timing_20261013_104917_5.json

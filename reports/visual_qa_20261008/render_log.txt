@@ -1,0 +1,11 @@
+Render model_comparison
+Render limit_cycles
+Render escape_time
+Render return_map
+Render kappa_sweep
+Render noise_sweep
+Render capacity
+Render correlation
+Render correlation_dynamics
+Render correlation_phase_plane
+Complete: /workspace/scratch/ee32108ff9b6/work/memory_flows_unified/figures/editorial/smoke

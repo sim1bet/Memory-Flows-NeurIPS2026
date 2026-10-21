@@ -1,0 +1,200 @@
+{
+  "pilot_wall_seconds": 487.7602468199998,
+  "workers": 8,
+  "samples": [
+    {
+      "experiment": "scaled_cycle",
+      "N": 256,
+      "P": 38,
+      "seconds": 1.5773283610001272,
+      "trials": 2
+    },
+    {
+      "experiment": "scaled_cycle",
+      "N": 256,
+      "P": 78,
+      "seconds": 2.1924030420000236,
+      "trials": 2
+    },
+    {
+      "experiment": "scaled_cycle",
+      "N": 256,
+      "P": 128,
+      "seconds": 17.06610359499973,
+      "trials": 2
+    },
+    {
+      "experiment": "scaled_cycle",
+      "N": 512,
+      "P": 77,
+      "seconds": 9.220059965000019,
+      "trials": 2
+    },
+    {
+      "experiment": "scaled_cycle",
+      "N": 512,
+      "P": 156,
+      "seconds": 69.03356508499974,
+      "trials": 2
+    },
+    {
+      "experiment": "scaled_cycle",
+      "N": 512,
+      "P": 256,
+      "seconds": 70.38167090500019,
+      "trials": 2
+    },
+    {
+      "experiment": "scaled_cycle",
+      "N": 1024,
+      "P": 154,
+      "seconds": 37.99297489299988,
+      "trials": 2
+    },
+    {
+      "experiment": "scaled_cycle",
+      "N": 1024,
+      "P": 313,
+      "seconds": 144.10788632999993,
+      "trials": 2
+    },
+    {
+      "experiment": "scaled_cycle",
+      "N": 1024,
+      "P": 512,
+      "seconds": 485.06200483899966,
+      "trials": 2
+    },
+    {
+      "experiment": "fixed_cycle",
+      "N": 256,
+      "P": 25600,
+      "seconds": 2.7545851949998905,
+      "trials": 2
+    },
+    {
+      "experiment": "fixed_cycle",
+      "N": 256,
+      "P": 30720,
+      "seconds": 56.91975155299997,
+      "trials": 2
+    },
+    {
+      "experiment": "fixed_cycle",
+      "N": 256,
+      "P": 35840,
+      "seconds": 7.341177832000085,
+      "trials": 2
+    },
+    {
+      "experiment": "fanout_phase",
+      "N": 256,
+      "P": 13,
+      "seconds": 2.4901205690002826,
+      "trials": 22
+    },
+    {
+      "experiment": "fanout_phase",
+      "N": 256,
+      "P": 45,
+      "seconds": 6.962160712999776,
+      "trials": 34
+    },
+    {
+      "experiment": "fanout_phase",
+      "N": 256,
+      "P": 77,
+      "seconds": 6.554155968000032,
+      "trials": 34
+    },
+    {
+      "experiment": "fanout_phase",
+      "N": 512,
+      "P": 26,
+      "seconds": 4.403681985000276,
+      "trials": 34
+    },
+    {
+      "experiment": "fanout_phase",
+      "N": 512,
+      "P": 90,
+      "seconds": 6.802397307000319,
+      "trials": 34
+    },
+    {
+      "experiment": "fanout_phase",
+      "N": 512,
+      "P": 154,
+      "seconds": 19.058061984999767,
+      "trials": 34
+    },
+    {
+      "experiment": "fanout_phase",
+      "N": 1024,
+      "P": 51,
+      "seconds": 9.405926493000152,
+      "trials": 34
+    },
+    {
+      "experiment": "fanout_phase",
+      "N": 1024,
+      "P": 179,
+      "seconds": 30.959862650000105,
+      "trials": 34
+    },
+    {
+      "experiment": "fanout_phase",
+      "N": 1024,
+      "P": 307,
+      "seconds": 55.45246575700003,
+      "trials": 34
+    }
+  ],
+  "groups": [
+    {
+      "experiment": "scaled_cycle",
+      "N": 256,
+      "population_tasks": 100,
+      "estimated_worker_hours": 0.19292439812962855
+    },
+    {
+      "experiment": "scaled_cycle",
+      "N": 512,
+      "population_tasks": 100,
+      "estimated_worker_hours": 1.3762527403240736
+    },
+    {
+      "experiment": "scaled_cycle",
+      "N": 1024,
+      "population_tasks": 100,
+      "estimated_worker_hours": 6.177433945018514
+    },
+    {
+      "experiment": "fixed_cycle",
+      "N": 256,
+      "population_tasks": 90,
+      "estimated_worker_hours": 0.5584626214999996
+    },
+    {
+      "experiment": "fanout_phase",
+      "N": 256,
+      "population_tasks": 410,
+      "estimated_worker_hours": 4.861214275925954
+    },
+    {
+      "experiment": "fanout_phase",
+      "N": 512,
+      "population_tasks": 410,
+      "estimated_worker_hours": 9.191331795237147
+    },
+    {
+      "experiment": "fanout_phase",
+      "N": 1024,
+      "population_tasks": 410,
+      "estimated_worker_hours": 29.100358895555644
+    }
+  ],
+  "legacy_fanout_estimated_worker_hours": 3.0956172859913016,
+  "total_estimated_worker_hours": 54.55359595768226,
+  "caveat": "One pattern set, three loads per N, one source for fanout; worker times measured under concurrent execution, sensitive to CPU and memory contention. Coarse planning estimate only."
+}

@@ -1,0 +1,16 @@
+{
+  "critical_point": {
+    "activation": "tanh",
+    "kappa_crit": 5.89138514308674,
+    "z_source_at_escape": 1.33103348000825,
+    "z_fixed": 2.4941665429658815,
+    "T_esc_critical": 0.627998929358218
+  },
+  "reference_escape": {
+    "kappa": 15.0,
+    "z_source_at_escape": 2.0168176370338955,
+    "z_fixed": 12.473723372949996,
+    "T_esc": 1.8221034596555563
+  },
+  "derivation_scope": "Exact for full-column-rank GPI pattern matrices; not a theoretical prediction for the raw-overlap rule."
+}

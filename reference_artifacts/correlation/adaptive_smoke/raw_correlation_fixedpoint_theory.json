@@ -1,0 +1,14 @@
+{
+  "orthogonal_kappa_crit": 5.89138514308674,
+  "orthogonal_T_esc_critical": 0.627998929358218,
+  "orthogonal_Z_critical": 2.4941665429658815,
+  "baseline_reference_kappa": 15.0,
+  "baseline_mean_empirical_kappa_crit": 4.321428571428571,
+  "supercritical_factor": 3.4710743801652892,
+  "gain_rule": "kappa_eval = supercritical_factor * kappa_crit for each realization",
+  "evaluation_kappa_max": 150.0,
+  "epsilon_max_grid": 0.3,
+  "epsilon_max_interpolated": 0.36666666666666664,
+  "epsilon_max_success_probability": 0.5,
+  "epsilon_max_definition": "plateau-qualified sustained cycles at matched relative supercriticality"
+}

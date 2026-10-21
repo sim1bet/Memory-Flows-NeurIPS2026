@@ -1,0 +1,72 @@
+{
+  "mode": "smoke",
+  "worker_budget": 4,
+  "stages": [
+    {
+      "stage": "noise_sweep",
+      "workers": 1,
+      "seconds": 1.4885172319995945,
+      "exit_code": 0
+    },
+    {
+      "stage": "escape_time",
+      "workers": 1,
+      "seconds": 1.8136685539998325,
+      "exit_code": 0
+    },
+    {
+      "stage": "return_map",
+      "workers": 1,
+      "seconds": 4.636119683000288,
+      "exit_code": 0
+    },
+    {
+      "stage": "model_comparison",
+      "workers": 4,
+      "seconds": 3.1180821139996624,
+      "exit_code": 0
+    },
+    {
+      "stage": "limit_cycles",
+      "workers": 4,
+      "seconds": 3.0947723650001535,
+      "exit_code": 0
+    },
+    {
+      "stage": "kappa_sweep",
+      "workers": 4,
+      "seconds": 3.0006176609999784,
+      "exit_code": 0
+    },
+    {
+      "stage": "capacity",
+      "workers": 4,
+      "seconds": 5.115169655000045,
+      "exit_code": 0
+    },
+    {
+      "stage": "correlation",
+      "workers": 4,
+      "seconds": 19.5923643860001,
+      "exit_code": 0
+    },
+    {
+      "stage": "correlation_dynamics",
+      "workers": 4,
+      "seconds": 5.014538999999786,
+      "exit_code": 0
+    },
+    {
+      "stage": "correlation_phase_plane",
+      "workers": 4,
+      "seconds": 18.50032919200021,
+      "exit_code": 0
+    },
+    {
+      "stage": "output_contracts",
+      "workers": 1,
+      "seconds": 0.42848001299989846,
+      "exit_code": 0
+    }
+  ]
+}

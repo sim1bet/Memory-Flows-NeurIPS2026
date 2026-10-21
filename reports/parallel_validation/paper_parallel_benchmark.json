@@ -1,0 +1,44 @@
+{
+  "allocated_cpus": 8,
+  "trials": 16,
+  "N": 256,
+  "P": 15,
+  "epsilon_values": [
+    0.0,
+    0.325,
+    0.65,
+    1.0
+  ],
+  "kappa_values": [
+    6.5,
+    20.6375,
+    34.775,
+    50.0
+  ],
+  "measurements": [
+    {
+      "workers": 1,
+      "seconds": 125.21162646899984,
+      "speedup": 1.0
+    },
+    {
+      "workers": 4,
+      "seconds": 49.61709042299981,
+      "speedup": 2.5235584231468455
+    },
+    {
+      "workers": 8,
+      "seconds": 38.13804106099997,
+      "speedup": 3.2831163579883365
+    }
+  ],
+  "old_four_unit_horizon_seconds": 14.636863988000187,
+  "horizon_cost_ratio": 8.554539180773471,
+  "outcomes": {
+    "timeout": 10,
+    "success": 6
+  },
+  "full_grid_serial_hours_extrapolated": 36.54179584972026,
+  "caveat": "Small stratified one-realization sample, not a full-campaign timing guarantee; excludes other experiments.",
+  "complete": true
+}

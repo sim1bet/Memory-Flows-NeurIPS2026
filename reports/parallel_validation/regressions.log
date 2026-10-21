@@ -1,0 +1,7 @@
+[test] 4 jobs; 2 workers; 0 cached
+[test] 4/4; elapsed 0.5s; throughput ETA 0.00h (variable trial costs)
+[test] 4 jobs; 1 workers; 4 cached
+[test] 4 jobs; 2 workers; 3 cached
+[test] 4/4; elapsed 0.5s; throughput ETA 0.00h (variable trial costs)
+[failure] 2 jobs; 2 workers; 0 cached
+All 30 test functions passed

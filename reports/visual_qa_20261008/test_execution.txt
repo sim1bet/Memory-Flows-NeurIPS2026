@@ -1,0 +1,20 @@
+BLOCKED test_capacity_protocols.py No module named 'tqdm'
+PASS test_core.py test_tanh_branch_equation
+PASS test_core.py test_smoothf_branch_equation
+PASS test_core.py test_stability_thresholds
+PASS test_core.py test_activation_specific_critical_gains
+PASS test_core.py test_tanh_escape_reference
+PASS test_core.py test_orthogonal_pseudoinverse_is_identity
+PASS test_core.py test_gpi_decodes_correlated_patterns
+PASS test_core.py test_biased_generator_expected_overlap
+PASS test_core.py test_cycle_orientation
+PASS test_correlation_dynamics.py test_orthogonal_reference_is_supercritical_at_15
+PASS test_correlation_dynamics.py test_adaptive_configuration_has_consistent_slow_step
+PASS test_simulation.py test_slow_clock_conversion
+PASS test_simulation.py test_first_euler_step_uses_old_state
+PASS test_visualization.py test_heatmap_edges_preserve_nonuniform_sampling
+PASS test_visualization.py test_palette_is_ordered_in_grayscale
+PASS test_visualization.py test_reduced_portrait_matches_existing_escape_theory
+PASS test_visualization.py test_identity_styles_do_not_depend_on_display_order
+17 test functions passed; 1 module(s) unavailable.
+Direct invocation; pytest unavailable in this authoring environment.
